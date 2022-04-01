@@ -1,0 +1,84 @@
+.people-count {
+    max-width: 80px;
+}
+
+.hour-picker {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    height: 255px;
+
+    &__item {
+        transition: opacity 300ms ease-in-out;
+
+        &:hover:not(:disabled) {
+            opacity: 30%;
+        }
+
+        &:disabled {
+            text-decoration: line-through;
+            opacity: 20%;
+        }
+    }
+
+    &--disabled {
+        opacity: 20%;
+        pointer-events: none;
+    }
+}
+
+.day-picker {
+    .rdp-day_selected {
+        background: white !important;
+        color: black !important;
+        border: 1px solid black !important;
+    }
+
+    .rdp-button:focus {
+        border: black;
+        background: white;
+    }
+}
+
+.api-loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status {
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &--open {
+        color: green;
+    }
+
+    &--cancelled {
+        color: red;
+    }
+
+    &--expired {
+        color: gray;
+    }
+}
+
+.dot {
+    display: block;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: black;
+
+    &--green {
+        background: #00ee00;
+    }
+
+    &--red {
+        background: red;
+    }
+}

@@ -1,0 +1,206 @@
+.dashboard-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    row-gap: 10px;
+    flex-direction: column;
+}
+
+.homepage {
+    .hero {
+        height: 100vh;
+        background-image: url('/assets/hero-pizza.jpg');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 1em;
+        }
+
+        &__headline {
+            font-size: 2.9rem;
+            line-height: normal;
+            color: white;
+        }
+
+        &__description {
+            font-size: 1.5rem;
+            color: white;
+            font-family: $ff-small;
+        }
+
+        &__button {
+            margin-top: 10px;
+        }
+    }
+}
+
+.login-page {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
+.success-page {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+        font-size: 2.4rem;
+        margin-top: 10px;
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+}
+
+.reserve-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    &__heading {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    &__box {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 20px;
+        width: 600px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        row-gap: 15px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+        padding-bottom: 6px;
+
+        .hour-picker {
+            margin-top: auto;
+        }
+
+        .chakra-spinner {
+            margin: 0 auto;
+        }
+    }
+
+    &__disclaimer {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+
+        & > span {
+            font-size: 27px;
+        }
+    }
+}
+
+.my-reservations {
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        border: gray 1px solid;
+        border-radius: 8px;
+        padding: 10px;
+
+        button {
+            position: absolute;
+            bottom: 10px;
+            left: 70px;
+            color: gray;
+            font-size: 0.8rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+}
+
+.reservations-page {
+    height: 100%;
+}
+
+.tables-page {
+    height: 100%;
+}
+
+.contact-page {
+    padding: 20px 30px;
+
+    h2 {
+        font-size: 32px;
+        font-family: $ff-secondary;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 20px;
+        max-width: 300px;
+
+        button {
+            max-width: 100px;
+        }
+    }
+}
