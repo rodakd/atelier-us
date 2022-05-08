@@ -31,7 +31,7 @@ pub fn from_env() -> Config {
 
     Config::build(environment)
         .environment(environment)
-        .port(8000)
+        .port(8080)
         .extra("databases", databases)
         .finalize()
         .unwrap()
