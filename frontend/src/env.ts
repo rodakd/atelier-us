@@ -1,5 +1,5 @@
 enum ENV {
-    API_URL = 'https://atelierus-backend.rodak.io/api',
+    API_URL = 'https://rodak.io/atelierus-backend/api',
 }
 
 export default ENV
