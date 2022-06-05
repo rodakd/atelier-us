@@ -25,6 +25,8 @@ mod config;
 mod errors;
 mod schema;
 
+mod tests;
+
 #[catch(404)]
 fn not_found() -> JsonValue {
     json!({
